@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Carlos Alcala</title>
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+</head>
+
+        <header>
+
+
+              <nav>
+
+                    <div class="menu-icon">
+                          <i class="fa fa-bars fa-2x"></i>
+                    </div>
+
+                  
+                    <div class="menu">
+                        <div class="logo">
+                            <img src="images/finallogo.png">
+                      </div>
+                      <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                      </ul>
+                </div>
+          </nav>
+              
+             
+           
+
+        </header>
+
+     
+
+<body>
+  
+
+  <div class="container">
+    <h1 class="brand">Contact Me</h1>
+    <div class="wrapper">
+      <div class="company-info">
+        <h3>Message me with any business inqueries</h3>
+        <ul>
+          
+          <li><i class="fa fa-phone"></i> (831) 676-7399</li>
+          <li><i class="fa fa-envelope"></i> calcala@csumb.edu</li>
+        </ul>
+      </div>
+      <div class="contact">
+        <h3>Email Us</h3>
+        <div class="alert">Your message has been sent</div>
+        <form id="contactForm">
+          <p>
+            <label>Name</label>
+            <input type="text" name="name" id="name" required>
+          </p>
+          <p>
+            <label>Occupation</label>
+            <input type="text" name="company" id="company">
+          </p>
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="email" id="email" required>
+          </p>
+          <p>
+            <label>Phone Number</label>
+            <input type="text" name="phone" id="phone">
+          </p>
+          <p class="full">
+            <label>Message</label>
+            <textarea name="message" rows="5" id="message"></textarea>
+          </p>
+          <p class="full">
+            <button type="submit">Submit</button>
+          </p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+  <script src="js/connect.js"></script>
+	
+	
+	<footer>
+	<div class="container">
+		<div class="col-3">
+			<p>Get to know me! Follow my social medias and feel free to contact me with any business inqueries.</p>
+			<p>calcala@csumb.edu</p>
+			<p>831-676-7399</p>
+		</div>
+	</div>
+	<!-- Add icon library -->
+<div class="footer-social-icons">
+    <h4 class="_14">Follow me on</h4>
+    <ul class="social-icons">
+        <li><a href="" class="social-icon"> <i class="fa fa-facebook"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-twitter"></i></a></li>
+       
+       
+        <li><a href="" class="social-icon"> <i class="fa fa-linkedin"></i></a></li>
+        <li><a href="" class="social-icon"> <i class="fa fa-instagram"></i></a></li>
+    </ul>
+</div>
+<div class="copy">Copright - 2018 - Carlos Alcala</div>
+<script type="text/javascript">
+
+  // Menu-toggle button
+
+  $(document).ready(function() {
+        $(".menu-icon").on("click", function() {
+              $("nav ul").toggleClass("showing");
+        });
+  });
+
+  // Scrolling Effect
+
+  $(window).on("scroll", function() {
+        if($(window).scrollTop()) {
+              $('nav').addClass('black');
+        }
+
+        else {
+              $('nav').removeClass('black');
+        }
+  })
+
+
+  </script>
+	
+ 
+	
+</footer>
+
+
+</body>
+</html>
