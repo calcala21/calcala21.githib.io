@@ -118,10 +118,13 @@ nav ul li a:hover{
         width: 100%;
         padding: 24px;
         text-align: center;
+        
+        
   }
 
   .menu-icon {
         display: block;
+        
   }
 
 }
@@ -129,6 +132,7 @@ nav ul li a:hover{
 
 @media(max-width:568px){
   .navbar-nav{display:none}
+ 
 }
 
 @media(min-width:568px){
@@ -145,7 +149,8 @@ nav ul li a:hover{
 
 * {
 	box-sizing: border-box;
-	transition: all ease-in-out 250ms;
+  transition: all ease-in-out 250ms;
+
 }
 
 body, html{
@@ -301,13 +306,13 @@ p:last-of-type {
 }
 
 .button-accent {
-	color: #00ff6c;
-	border-color: #00ff6c;
+	color: white;
+	border-color: darkblue;
 }
 
 .button-accent:hover,
 .button-accent:focus {
-	background: #00ff6c;
+	background:darkblue;
 	color: #232323;
 }
 
